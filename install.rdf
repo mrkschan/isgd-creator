@@ -3,12 +3,12 @@
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
-                   em:id="isgdcreator@postspectacular.com"
-                   em:name="is.gd Creator"
+                   em:id="isgdcreator@mrkschan.at.gmail.com"
+                   em:name="is.gd Creator (fork)"
                    em:version="0.2.3"
-                   em:creator="Karsten Schmidt"
+                   em:creator="mrkschan"
                    em:description="Provides easy access to the is.gd URL shortening service"
-                   em:homepageURL="http://postspectacular.com/"
+                   em:homepageURL="https://github.com/mrkschan/isgd-creator/"
                    em:iconURL="chrome://isgdcreator/skin/icon.png"
                    em:optionsURL="chrome://isgdcreator/content/options.xul"
                    em:aboutURL="chrome://isgdcreator/content/about.xul">
