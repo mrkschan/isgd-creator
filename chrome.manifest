@@ -1,0 +1,8 @@
+content isgdcreator jar:chrome/isgdcreator.jar!/content/
+overlay	chrome://browser/content/browser.xul chrome://isgdcreator/content/main.xul
+
+skin isgdcreator classic/1.0 jar:chrome/isgdcreator.jar!/skin/
+style chrome://global/content/customizeToolbar.xul chrome://isgdcreator/skin/overlay.css
+
+locale isgdcreator en-US jar:chrome/isgdcreator.jar!/locale/en-US/
+locale isgdcreator de-DE jar:chrome/isgdcreator.jar!/locale/en-US/
