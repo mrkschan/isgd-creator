@@ -6,7 +6,7 @@
                    em:id="isgdcreator@mrkschan.at.gmail.com"
                    em:name="is.gd Creator (fork)"
                    em:version="0.2.3"
-                   em:creator="mrkschan"
+                   em:creator="Karsten Schmidt (re-packaged by @mrkschan)"
                    em:description="Provides easy access to the is.gd URL shortening service"
                    em:homepageURL="https://github.com/mrkschan/isgd-creator/"
                    em:iconURL="chrome://isgdcreator/skin/icon.png"
