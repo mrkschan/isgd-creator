@@ -1,0 +1,6 @@
+<!ENTITY isgdcreator.version "0.2.1">
+<!ENTITY isgdcreator.current "Create is.gd URL for this page...">
+<!ENTITY isgdcreator.link "Create is.gd URL for this link...">
+<!ENTITY isgdcreator.selection "Create is.gd URL for this selection...">
+<!ENTITY isgdcreator.toolbar "is.gd">
+<!ENTITY isgdcreator.toolbar_tooltip "Create is.gd shortened URL for the current page or selection">

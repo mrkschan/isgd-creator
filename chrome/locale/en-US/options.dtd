@@ -1,0 +1,4 @@
+<!ENTITY prefwindow.title "is.gd Creator preferences">
+<!ENTITY preferences "Preferences">
+<!ENTITY autoclipboard.label "automatically copy shortened URL into clipboard">
+<!ENTITY autoclipboard.accesskey "C">
