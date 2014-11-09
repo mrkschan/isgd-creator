@@ -1,6 +1,8 @@
 var buttons = require('sdk/ui/button/action'),
     clipboard = require('sdk/clipboard'),
+    notifications = require('sdk/notifications'),
     requests = require('sdk/request'),
+    self = require('sdk/self'),
     tabs = require('sdk/tabs'),
     urls = require('sdk/url');
 
@@ -21,7 +23,14 @@ var isgdButton = buttons.ActionButton({
     requests.Request({
       url: 'http://is.gd/api.php?longurl=' + escape(url),
       onComplete: function(response) {
-        clipboard.set(response.text, 'text');
+        var isgd = response.text;
+
+        clipboard.set(isgd, 'text');
+        notifications.notify({
+          title: 'is.gd Creator',
+          text: 'URL copied to clipboard - ' + isgd,
+          iconURL: self.data.url('icon-32.png')
+        });
       }
     }).get();
   }
