@@ -1,5 +1,6 @@
 var buttons = require('sdk/ui/button/action'),
     clipboard = require('sdk/clipboard'),
+    contextmenu = require('sdk/context-menu'),
     notifications = require('sdk/notifications'),
     requests = require('sdk/request'),
     self = require('sdk/self'),
@@ -19,6 +20,13 @@ var isgdButton = buttons.ActionButton({
   }
 });
 
+// Setup context menu
+contextmenu.Item({
+  label: 'Create is.gd URL for this page...',
+  context: contextmenu.PageContext(),
+  contentScriptFile: self.data.url('script/pagecontext.js'),
+  onMessage: function(url) {
+    isgdify(url);
   }
 });
 
