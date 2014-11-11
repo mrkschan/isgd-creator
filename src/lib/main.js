@@ -22,6 +22,7 @@ var isgdButton = buttons.ActionButton({
 
 // Setup context menu
 contextmenu.Item({
+  image: self.data.url('icon-16.png'),
   label: 'Create is.gd URL for this page...',
   context: contextmenu.PredicateContext(function(c) { return true; }),
   contentScriptFile: self.data.url('script/pagecontext.js'),
@@ -31,6 +32,7 @@ contextmenu.Item({
 });
 
 contextmenu.Item({
+  image: self.data.url('icon-16.png'),
   label: 'Create is.gd URL for this link...',
   context: contextmenu.SelectorContext('a'),
   contentScriptFile: self.data.url('script/linkcontext.js'),
