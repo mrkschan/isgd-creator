@@ -30,6 +30,15 @@ contextmenu.Item({
   }
 });
 
+contextmenu.Item({
+  label: 'Create is.gd URL for this link...',
+  context: contextmenu.SelectorContext('a'),
+  contentScriptFile: self.data.url('script/linkcontext.js'),
+  onMessage: function(url) {
+    isgdify(url);
+  }
+});
+
 // Helpers
 function isgdify(url) {
   if (!urls.isValidURI(url)) {
