@@ -23,7 +23,7 @@ var isgdButton = buttons.ActionButton({
 // Setup context menu
 contextmenu.Item({
   label: 'Create is.gd URL for this page...',
-  context: contextmenu.PageContext(),
+  context: contextmenu.PredicateContext(function(c) { return true; }),
   contentScriptFile: self.data.url('script/pagecontext.js'),
   onMessage: function(url) {
     isgdify(url);
