@@ -5,12 +5,13 @@ var buttons = require('sdk/ui/button/action'),
     requests = require('sdk/request'),
     self = require('sdk/self'),
     tabs = require('sdk/tabs'),
-    urls = require('sdk/url');
+    urls = require('sdk/url'),
+    _ = require('sdk/l10n').get;
 
 // Setup action button
 var isgdButton = buttons.ActionButton({
   id: 'isgdcreator-button',
-  label: 'Create is.gd shortened URL for the current page',
+  label: _('Create is.gd shortened URL for the current page'),
   icon: {
     '16': './icon-16.png',
     '32': './icon-32.png'
@@ -23,7 +24,7 @@ var isgdButton = buttons.ActionButton({
 // Setup context menu
 contextmenu.Item({
   image: self.data.url('icon-16.png'),
-  label: 'Create is.gd URL for this page...',
+  label: _('Create is.gd URL for this page...'),
   context: contextmenu.PredicateContext(function(c) { return true; }),
   contentScriptFile: self.data.url('script/pagecontext.js'),
   onMessage: function(url) {
@@ -33,7 +34,7 @@ contextmenu.Item({
 
 contextmenu.Item({
   image: self.data.url('icon-16.png'),
-  label: 'Create is.gd URL for this link...',
+  label: _('Create is.gd URL for this link...'),
   context: contextmenu.SelectorContext('a'),
   contentScriptFile: self.data.url('script/linkcontext.js'),
   onMessage: function(url) {
@@ -55,7 +56,7 @@ function isgdify(url) {
       clipboard.set(isgd, 'text');
       notifications.notify({
         title: 'is.gd Creator',
-        text: 'URL copied to clipboard - ' + isgd,
+        text: _('URL copied to clipboard - %s', isgd),
         iconURL: self.data.url('icon-32.png')
       });
     }
