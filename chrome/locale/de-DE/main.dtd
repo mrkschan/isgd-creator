@@ -1,6 +1,0 @@
-<!ENTITY isgdcreator.version "0.2.1">
-<!ENTITY isgdcreator.current "is.gd URL für diese Seite erzeugen...">
-<!ENTITY isgdcreator.link "is.gd URL für diesen Link erzeugen...">
-<!ENTITY isgdcreator.selection "is.gd URL für diese Markierung erzeugen...">
-<!ENTITY isgdcreator.toolbar "is.gd">
-<!ENTITY isgdcreator.toolbar_tooltip "is.gd URL für die aktuelle Seite oder Markierung erzeugen">
