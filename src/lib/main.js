@@ -49,7 +49,7 @@ function isgdify(url) {
   }
 
   requests.Request({
-    url: 'http://is.gd/api.php?longurl=' + escape(url),
+    url: 'https://is.gd/api.php?longurl=' + escape(url),
     onComplete: function(response) {
       var isgd = response.text;
 
