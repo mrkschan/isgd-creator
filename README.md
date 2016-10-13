@@ -12,13 +12,13 @@ Build, Run
 ==========
 
 ```
-npm install
-node_modules/jpm/bin/jpm run
+npm install -g jpm
+jpm run
 ```
 
 Dist
 ====
 
 ```
-node_modules/jpm/bin/jpm sign
+jpm xpi
 ```
