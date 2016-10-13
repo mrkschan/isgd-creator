@@ -9,5 +9,8 @@
   "main": "lib/main.js",
   "dependencies": [
     "jpm==1.0.4"
-  ]
+  ],
+  "permissions": {
+    "multiprocess": true
+  }
 }
