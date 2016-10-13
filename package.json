@@ -5,7 +5,7 @@
   "description": "Provides easy access to the is.gd URL shortening service - https://github.com/mrkschan/isgd-creator",
   "author": "mrkschan@gmail.com (forked from works by Karsten Schmidt)",
   "license": "MPL 1.1/GPL 2.0/LGPL 2.1",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "main": "lib/main.js",
   "dependencies": [
     "jpm==1.0.4"
